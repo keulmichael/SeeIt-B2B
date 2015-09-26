@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 xmlns:gap = "http://phonegap.com/ns/1.0"
-id = "SeeIt"
+id = "SeeIt B2B"
 versionCode="1500"
 version = "2.0">
-<name>See It !</name>
+<name>See It B2B</name>
 <description>
 Application de partage de moments
 </description>
