@@ -223,42 +223,6 @@ window.onload = function() {initialize();nombrePhotos()};
 </div>
 </div>
 
-<!--------------------------------------------------------------CONSTATS---------------------------------------------------------------->
-<div id="tabViewAjouter" data-dojo-type="dojox/mobile/ScrollableView" >
-<h1 data-dojo-type="dojox/mobile/Heading">Constats</h1>
-<div id="pul1l8" style="position: absolute;height: 65px; top: -65px;" align="center">
-<table><tr><td><img src="http://www.appliseeit.com/mobile/image/pull-to-refresh-arrow.png"></td><td><font color=grey size=2> Chargement en cours...</font></td></tr></table>
-</div>
-<div id="texteAjouter" align="center"></div><br><br>
-<font color='grey' size='3'>Quel th&ecirc;me choississez-vous ?</font>
-<select id="nouvelAlbum">
-<option value='' selected disabled>
-<option value='Animaux'>Animaux
-<option value='Architecture'>Architecture
-<option value='C&eacute;l&eacute;brit&eacute;s'>C&eacute;l&eacute;brit&eacute;s
-<option value='D&eacute;coration'>D&eacute;coration
-<option value='Ev&eacute;nements'>Ev&eacute;nements
-<option value='Faits divers'>Faits divers
-<option value='Gastronomie'>Gastronomie
-<option value='Insolite'>Insolite
-<option value='Jeux'>Jeux
-<option value='Loisirs'>Loisirs
-<option value='Nature'>Nature
-<option value='Paysage'>Paysage
-<option value='Restaurant'>Restaurant
-<option value='Selfie'>Selfie
-<option value='Tourisme'>Tourisme
-<option value='Voyages'>Voyages
-</select>
-<font color='grey' size='3'>Comment s'appelle votre album ?</font><input type="text" id="nouvelElement">
-<font color='grey' size='3'>Quel est votre pseudo ?</font><input type="text" id="nouveauPseudo">
-<button onclick='creerAlbum()'>Ajouter</button>
-<br>
-<div id="resultatCreerAlbum"></div><br><br>
-<div id='afficherTourneeApresCreer' style='display:none'><button onclick='affichPointsTournees(document.getElementById("nouvelAlbum").value);'>Afficher</button></div>
-</div>
-
-
 <!--------------------------------------------------------------AJOUTER---------------------------------------------------------------->
 <div id="tabViewAjouter" data-dojo-type="dojox/mobile/ScrollableView" >
 <h1 data-dojo-type="dojox/mobile/Heading">Ajouter</h1>
@@ -295,6 +259,30 @@ window.onload = function() {initialize();nombrePhotos()};
 </div>
 
 
+<!--------------------------------------------------------------INFOS---------------------------------------------------------------->
+<div id="tabViewUpdates" data-dojo-type="dojox/mobile/ScrollableView" >
+<h1 data-dojo-type="dojox/mobile/Heading">Infos</h1>
+<div id="pull10" style="position: absolute;height: 65px; top: -65px; align="center"">
+<table ><tr><td><img src="http://www.appliseeit.com/mobile/image/pull-to-refresh-arrow.png"></td><td><font color=grey size=2> Chargement en cours...</font></td></tr></table>
+</div>
+<ul id="intro" data-dojo-type="dojox/mobile/RoundRectList">
+<div id='IntroInfos' align='center'></div>
+</ul>
+<div data-dojo-type="dojox/mobile/Accordion" >
+<div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Aide"'>
+<div id='AideInfos' align='left'></div>
+</div>
+<div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"A venir"'>
+<div id='AvenirInfos' align='left'></div>
+</div>
+<div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Pourquoi faire ?"'>
+<div id='PourquoifaireInfos' align='left'></div>
+</div>
+<div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Nous contacter ?"' id='NouscontacterInfos'>
+<div align='left'></div>
+</div>
+</div>
+</div>
 
 <!--------------------------------------------------------------PIC---------------------------------------------------------------->
 <div id='cadreCamera' style="display:none;position: absolute;height: 65px; top: 65px;" data-dojo-type="dojox/mobile/ScrollableView" >
