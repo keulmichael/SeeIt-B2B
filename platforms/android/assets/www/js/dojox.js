@@ -6,15 +6,19 @@ dojoConfig = {
 async: true,
 parseOnLoad: false
 };
-require(["dojo/request"], function(request){
-request.get('http://www.appliseeit.com/mobile/texteTitreAccueil.html').then(function(resptitreAccueil){document.getElementById("titreAccueil").innerHTML=resptitreAccueil;})
-request.get('http://www.appliseeit.com/mobile/texttexteAjouter.html').then(function(resptexteAjouter){document.getElementById("texteAjouter").innerHTML=resptexteAjouter;})
-request.get('http://www.appliseeit.com/mobile/texteIntroInfos.html').then(function(respIntroInfos){document.getElementById("IntroInfos").innerHTML=respIntroInfos;})
-request.get('http://www.appliseeit.com/mobile/texteAideInfos.html').then(function(respAideInfos){document.getElementById("AideInfos").innerHTML=respAideInfos;})
-request.get('http://www.appliseeit.com/mobile/texteAvenirInfos.html').then(function(respAvenirInfos){document.getElementById("AvenirInfos").innerHTML=respAvenirInfos;})
-request.get('http://www.appliseeit.com/mobile/textePourquoifaireInfos.html').then(function(respPourquoifaireInfos){document.getElementById("PourquoifaireInfos").innerHTML=respPourquoifaireInfos;})
-request.get('http://www.appliseeit.com/mobile/texteNouscontacterInfos.html').then(function(respNouscontacterInfos){document.getElementById("NouscontacterInfos").innerHTML=respNouscontacterInfos;})
-});
+
+
+//require(["dojo/request"], function(request){
+//request.get('http://www.appliseeit.com/mobile/texteTitreAccueil.html').then(function(resptitreAccueil){document.getElementById("titreAccueil").innerHTML=resptitreAccueil;})
+//request.get('http://www.appliseeit.com/mobile/texttexteAjouter.html').then(function(resptexteAjouter){document.getElementById("texteAjouter").innerHTML=resptexteAjouter;})
+//request.get('http://www.appliseeit.com/mobile/texteIntroInfos.html').then(function(respIntroInfos){document.getElementById("IntroInfos").innerHTML=respIntroInfos;})
+//request.get('http://www.appliseeit.com/mobile/texteAideInfos.html').then(function(respAideInfos){document.getElementById("AideInfos").innerHTML=respAideInfos;})
+//request.get('http://www.appliseeit.com/mobile/texteAvenirInfos.html').then(function(respAvenirInfos){document.getElementById("AvenirInfos").innerHTML=respAvenirInfos;})
+//request.get('http://www.appliseeit.com/mobile/textePourquoifaireInfos.html').then(function(respPourquoifaireInfos){document.getElementById("PourquoifaireInfos").innerHTML=respPourquoifaireInfos;})
+//request.get('http://www.appliseeit.com/mobile/texteNouscontacterInfos.html').then(function(respNouscontacterInfos){document.getElementById("NouscontacterInfos").innerHTML=respNouscontacterInfos;})
+//});
+
+
 require(["dojo/_base/connect","dojo/ready",
 ], function(connect, ready){
 ready(function(){
