@@ -262,36 +262,7 @@ if (alertNouvelleConnexion=='on')
 else{}
 };
 
-function Voix(){
-if ('webkitSpeechRecognition' in window) {
-var recognition = new webkitSpeechRecognition();
-recognition.lang = "fr-FR";
-recognition.continuous = false;
-recognition.interimResults = true;
-recognition.start();
-recognition.onresult = function (event) {
-for (var i = event.resultIndex; i < event.results.length; ++i) {
-if (event.results[i].isFinal) {
-recognition.stop();
-var transcript = event.results[i][0].transcript;alert(transcript);
-var words = transcript.split(' ');
-var u = new SpeechSynthesisUtterance();
-u.text = response;
-u.lang = 'fr-FR';
-u.onend = function () {
-if (callback) {
-callback();
-}deom
-};
-u.onerror = function (e) {
-if (callback) {
-callback(e);
-}
-};
-speechSynthesis.speak(u);
-}}};}
-else{alert('La fonction Voix ne fonctionne pas sur ce navigateur');}
-}
+
 function CacherCamera(){
 document.getElementById("cadreCamera").style.display = "none";
 }
@@ -363,11 +334,6 @@ photo.src ='http://www.appliseeit.com/mobile/photos/'+num+'_'+n+'.jpg?v=123';
 require(['dojo/dom' , "dojo/on", "dojo/_base/connect","dojo/ready","dojo/request", "dojox/mobile/ProgressBar"
 ], function(dom, on, connect, ready, request, ProgressBar){
 ready(function(){
-//request.get('https://graph.facebook.com/fql?q=SELECT friend_count FROM user WHERE uid = 1441017086216744').then(
-//request.get('https://graph.facebook.com/100009539529598').then(
-//function(nbamisfacebookJSON){var nbamisfacebook = JSON.parse(nbamisfacebookJSON);
-//document.getElementById('nbamisfacebook').innerHTML='<table><tr><td><font size=2 color="grey">' + nbamisfacebook.data[0].friend_count + ' amis nous suivent sur </font></td><td><img src="http://www.appliseeit.com/mobile/icone-facebook.gif" width="50px"></td></tr></table>';})
-//document.getElementById('nbamisfacebook').innerHTML='<table><tr><td><font size=2 color="grey">Retrouvez nous sur </font><img src="http://www.appliseeit.com/mobile/icone-facebook.gif" width="50px" onTouchstart="openFacebook()"></td></tr></table>';})
 request.get('http://www.appliseeit.com/mobile/affichPhotosAccueil.php?n=1').then(
 function(response441){
 var resPhoto = response441.split("_|_");
@@ -389,11 +355,6 @@ function RafraichirAccueil(){
 require(['dojo/dom' , "dojo/on", "dojo/_base/connect","dojo/ready","dojo/request","dojox/mobile/ProgressBar"
 ], function(dom, on, connect, ready, request, ProgressBar){
 ready(function(){
-//request.get('https://graph.facebook.com/fql?q=SELECT friend_count FROM user WHERE uid = 1441017086216744').then(
-//equest.get('https://graph.facebook.com/100009539529598').then(
-//function(nbamisfacebookJSON){var nbamisfacebook = JSON.parse(nbamisfacebookJSON);
-//document.getElementById('nbamisfacebook').innerHTML='<table><tr><td><font size=2 color="grey">' + nbamisfacebook.data[0].friend_count + ' amis nous suivent sur </font></td><td><img src="http://www.appliseeit.com/mobile/icone-facebook.gif" width="50px"></td></tr></table>';})
-//document.getElementById('nbamisfacebook').innerHTML='<table><tr><td><font size=2 color="grey">Retrouvez nous sur </font><img src="http://www.appliseeit.com/mobile/icone-facebook.gif" width="50px" onTouchstart="alert(\'facebook\');openFacebook()"></td></tr></table>';})
 request.get('http://www.appliseeit.com/mobile/affichPhotosAccueil.php?n=1').then(
 function(response442){
 var resPhoto = response442.split("_|_");
@@ -449,6 +410,16 @@ require([
 });
 
 
+function AlertChangeStateConstat(newStatePLV){
+alert(newStatePLV);	
+}
 
 
+function EnvoiEmailRapport(){
+require(["dojo/request"], function(request){
+request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php').then(
+function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmationEnvoiRapportBtoB").innerHTML=responseEnvoiEmailRapport;}
+)
+})
+}
 
