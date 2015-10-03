@@ -410,14 +410,16 @@ require([
 });
 
 
-function AlertChangeStateConstat(newStatePLV){
-alert(newStatePLV);	
+function AlertChangeStateConstat(newState){
+alert(newState);	
 }
 
 
 function EnvoiEmailRapport(){
+	alert(document.getElementById("newStatePLV").value);
 require(["dojo/request"], function(request){
-request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php').then(
+var magasinControle = document.getElementById("magasinControle").value;
+request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle).then(
 function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmationEnvoiRapportBtoB").innerHTML=responseEnvoiEmailRapport;}
 )
 })
