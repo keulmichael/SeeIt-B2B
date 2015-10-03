@@ -256,7 +256,7 @@ window.onload = function() {initialize();nombrePhotos()};
 </div>
 
 <font color='grey' size='3'>Sélectionner le magasin</font>
-<select id="nouvelAlbum">
+<select id="magasinControle">
 <option value='' selected disabled>
 <option value='Creteil'>Créteil
 <option value='Evry'>Evry
@@ -272,63 +272,59 @@ window.onload = function() {initialize();nombrePhotos()};
 
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Propreté"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Facade/Vitrine
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteFacadeVitrine){AlertChangeStateConstat(newStatePropreteFacadeVitrine);}" value="oui" id="StatePropreteFacadeVitrine"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteFacadeVitrine){AlertChangeStateConstat(newStatePropreteFacadeVitrine);}" value="off" id="StatePropreteFacadeVitrine"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Surface de vente
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropretesurfacevente){AlertChangeStateConstat(newStatePropretesurfacevente);}" value="oui" id="StatePropretesurfacevente"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropretesurfacevente){AlertChangeStateConstat(newStatePropretesurfacevente);}" value="off" id="StatePropretesurfacevente"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Stock
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteStock){AlertChangeStateConstat(newStatePropreteStock);}" value="oui" id="StatePropreteStock"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteStock){AlertChangeStateConstat(newStatePropreteStock);}" value="off" id="StatePropreteStock"></div>
 </li>
-<br>
 </div>
 
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Plan de merchandising"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Produits en place
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateProduits){AlertChangeStateConstat(newStateProduits);}" value="oui" id="StateProduits"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateProduits){AlertChangeStateConstat(newStateProduits);}" value="off" id="StateProduits"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Modèle d'exposition
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateModeleExpo){AlertChangeStateConstat(newStateModeleExpo);}" value="oui" id="StateModeleExpo"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateModeleExpo){AlertChangeStateConstat(newStateModeleExpo);}" value="off" id="StateModeleExpo"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Fiches et prix en place
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateFichesEtPrix){AlertChangeStateConstat(newStateFichesEtPrix);}" value="oui" id="StateFichesEtPrix"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateFichesEtPrix){AlertChangeStateConstat(newStateFichesEtPrix);}" value="off" id="StateFichesEtPrix"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Prix correctes
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteStock){AlertChangeStateConstat(newStatePrixCorrectes);}" value="oui" id="StatePrixCorrectes"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteStock){AlertChangeStateConstat(newStatePrixCorrectes);}" value="off" id="StatePrixCorrectes"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Visibilité
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateVisibilite){AlertChangeStateConstat(newStateVisibilite);}" value="oui" id="StateVisibilite"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateVisibilite){AlertChangeStateConstat(newStateVisibilite);}" value="off" id="StateVisibilite"></div>
 </li>
-<br>
 </div>
 
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"RH"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe en place
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateEquipe){AlertChangeStateConstat(newStateEquipe);}" value="oui" id="StateEquipe"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateEquipe){AlertChangeStateConstat(newStateEquipe);}" value="off" id="StateEquipe"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe dynamique
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateDynamisme){AlertChangeStateConstat(newStateDynamisme);}" value="oui" id="StateDynamisme"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateDynamisme){AlertChangeStateConstat(newStateDynamisme);}" value="off" id="StateDynamisme"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Port du Gilet
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateGilet){AlertChangeStateConstat(newStateGilet);}" value="oui" id="StateGilet"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateGilet){AlertChangeStateConstat(newStateGilet);}" value="off" id="StateGilet"></div>
 </li>
-<br>
 </div>
 
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Matériel"' id='NouscontacterInfos'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Spots
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateSpots){AlertChangeStateConstat(newStateSpots);}" value="oui" id="StateSpots"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateSpots){AlertChangeStateConstat(newStateSpots);}" value="off" id="StateSpots"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Ecrans
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateEcrans){AlertChangeStateConstat(newStateEcrans);}" value="oui" id="StateEcrans"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateEcrans){AlertChangeStateConstat(newStateEcrans);}" value="off" id="StateEcrans"></div>
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">PLV
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePLV){AlertChangeStateConstat(newStatePLV);}" value="oui" id="StatePLV"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePLV){AlertChangeStateConstat(newStatePLV);}" value="off" id="StatePLV"></div>
 </li>
-<br>
 </div>
 
-<div id='afficherTourneeApresCreer' style='display:none'><button onclick='EnvoiEmailRapport();'>Envoyer</button></div>
+<button onclick='EnvoiEmailRapport();'>Envoyer</button><div id='afficherConfirmationEnvoiRapportBtoB'></div>
 
 </div>
 </div>
