@@ -250,9 +250,11 @@ window.onload = function() {initialize();nombrePhotos()};
 <!-------------------------------------------------------------CONSTATS--------------------------------------------------------------->
 <div id="tabViewUpdates" data-dojo-type="dojox/mobile/ScrollableView" >
 <h1 data-dojo-type="dojox/mobile/Heading">Constats</h1>
+
 <div id="pull10" style="position: absolute;height: 65px; top: -65px; align="center"">
 <table ><tr><td><img src="http://www.appliseeit.com/mobile/image/pull-to-refresh-arrow.png"></td><td><font color=grey size=2> Chargement en cours...</font></td></tr></table>
 </div>
+
 <font color='grey' size='3'>Sélectionner le magasin</font>
 <select id="nouvelAlbum">
 <option value='' selected disabled>
@@ -288,7 +290,7 @@ window.onload = function() {initialize();nombrePhotos()};
 <option value='Animaux'>Animaux
 <option value='Architecture'>Architecture
 </select>
-<font color='grey' size='3'>Comment s'appelle votre album ?</font><input type="text" id="nouvelElement">
+<font color='grey' size='3'>Comment sappelle votre album ?</font><input type="text" id="nouvelElement">
 <font color='grey' size='3'>Quel est votre pseudo ?</font><input type="text" id="nouveauPseudo">
 <br>
 </div>
@@ -300,7 +302,7 @@ window.onload = function() {initialize();nombrePhotos()};
 <option value='Animaux'>Animaux
 <option value='Architecture'>Architecture
 </select>
-<font color='grey' size='3'>Comment s'appelle votre album ?</font><input type="text" id="nouvelElement">
+<font color='grey' size='3'>Comment sappelle votre album ?</font><input type="text" id="nouvelElement">
 <font color='grey' size='3'>Quel est votre pseudo ?</font><input type="text" id="nouveauPseudo">
 <br>
 </div>
@@ -312,12 +314,14 @@ window.onload = function() {initialize();nombrePhotos()};
 <option value='Animaux'>Animaux
 <option value='Architecture'>Architecture
 </select>
-<font color='grey' size='3'>Comment s'appelle votre album ?</font><input type="text" id="nouvelElement">
+<font color='grey' size='3'>Comment sappelle votre album ?</font><input type="text" id="nouvelElement">
 <font color='grey' size='3'>Quel est votre pseudo ?</font><input type="text" id="nouveauPseudo">
 <br>
 </div>
+
 <div id='afficherTourneeApresCreer' style='display:none'><button onclick='affichPointsTournees(document.getElementById("nouvelAlbum").value);'>Envoyer</button></div>
 
+</div>
 </div>
 
 <!--------------------------------------------------------------PIC---------------------------------------------------------------->
