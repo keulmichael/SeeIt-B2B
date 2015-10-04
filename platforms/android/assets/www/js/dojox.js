@@ -412,6 +412,7 @@ require([
 
 function ChangeStateConstat(State,valueState){
 document.getElementById(State).value=valueState;	
+	alert(document.getElementById(State).value+"="+valueState);
 }
 
 
