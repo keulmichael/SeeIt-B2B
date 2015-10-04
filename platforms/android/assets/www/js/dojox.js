@@ -415,7 +415,7 @@ alert(newState);
 }
 
 
-function EnvoiEmailRapport(){
+function EnvoiEmailRapportt(){
 	alert(document.getElementById("newStatePLV").value);
 require(["dojo/request"], function(request){
 var magasinControle = document.getElementById("magasinControle").value;
@@ -424,4 +424,10 @@ function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmatio
 )
 })
 }
+
+function EnvoiEmailRapport(){
+	alert(document.getElementById("newStatePLV").value);
+
+}
+
 
