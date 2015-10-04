@@ -416,7 +416,7 @@ document.getElementById(State).value=valueState;
 
 
 function EnvoiEmailRapport(){
-	alert(document.getElementById("StatePLV").value);
+	alert(document.getElementById("InputPLV").value);
 require(["dojo/request"], function(request){
 var magasinControle = document.getElementById("magasinControle").value;
 request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle).then(
