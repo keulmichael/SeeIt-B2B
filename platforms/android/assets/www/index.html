@@ -273,54 +273,68 @@ window.onload = function() {initialize();nombrePhotos()};
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Propreté"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Facade/Vitrine
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteFacadeVitrine){AlertChangeStateConstat(newStatePropreteFacadeVitrine);}" value="off" id="StatePropreteFacadeVitrine"></div>
+<input type="hidden" id="InputPropreteFacadeVitrine" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Surface de vente
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropretesurfacevente){AlertChangeStateConstat(newStatePropretesurfacevente);}" value="off" id="StatePropretesurfacevente"></div>
+<input type="hidden" id="InputPropretesurfacevente" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Stock
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteStock){AlertChangeStateConstat(newStatePropreteStock);}" value="off" id="StatePropreteStock"></div>
+<input type="hidden" id="InputPropreteStock" value="off">
 </li>
 </div>
 
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Plan de merchandising"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Produits en place
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateProduits){AlertChangeStateConstat(newStateProduits);}" value="off" id="StateProduits"></div>
+<input type="hidden" id="InputProduits" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Modèle d'exposition
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateModeleExpo){AlertChangeStateConstat(newStateModeleExpo);}" value="off" id="StateModeleExpo"></div>
+<input type="hidden" id="InputModeleExpo" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Fiches et prix en place
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateFichesEtPrix){AlertChangeStateConstat(newStateFichesEtPrix);}" value="off" id="StateFichesEtPrix"></div>
+<input type="hidden" id="InputFichesEtPrix" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Prix correctes
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteStock){AlertChangeStateConstat(newStatePrixCorrectes);}" value="off" id="StatePrixCorrectes"></div>
+<input type="hidden" id="InputPrixCorrectes" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Visibilité
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateVisibilite){AlertChangeStateConstat(newStateVisibilite);}" value="off" id="StateVisibilite"></div>
+<input type="hidden" id="InputVisibilite" value="off">
 </li>
 </div>
 
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"RH"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe en place
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateEquipe){AlertChangeStateConstat(newStateEquipe);}" value="off" id="StateEquipe"></div>
+<input type="hidden" id="InputEquipe" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe dynamique
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateDynamisme){AlertChangeStateConstat(newStateDynamisme);}" value="off" id="StateDynamisme"></div>
+<input type="hidden" id="InputDynamisme" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Port du Gilet
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateGilet){AlertChangeStateConstat(newStateGilet);}" value="off" id="StateGilet"></div>
 </li>
+<input type="hidden" id="InputGilet" value="off">
 </div>
 
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Matériel"' id='NouscontacterInfos'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Spots
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateSpots){AlertChangeStateConstat(newStateSpots);}" value="off" id="StateSpots"></div>
+<input type="hidden" id="InputSpots" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Ecrans
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateEcrans){AlertChangeStateConstat(newStateEcrans);}" value="off" id="StateEcrans"></div>
+<input type="hidden" id="InputEcrans" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">PLV
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePLV){AlertChangeStateConstat(newStatePLV);}" value="off" id="StatePLV"></div>
+<input type="hidden" id="InputPLV" value="off">
 </li>
 </div>
 
