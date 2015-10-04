@@ -410,8 +410,8 @@ require([
 });
 
 
-function AlertChangeStateConstat(newState){
-alert(newState);	
+function AlertChangeStateConstat(State,valueState){
+document.getElementById(State).value=valueState;	
 }
 
 
