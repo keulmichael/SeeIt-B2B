@@ -427,7 +427,7 @@ function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmatio
 
 function EnvoiEmailRapport(){
 alert("ok");
-	alert(document.getElementById("newStatePLV").value);
+	alert(document.getElementById("StatePLV").value);
 
 }
 
