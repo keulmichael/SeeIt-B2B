@@ -412,14 +412,27 @@ require([
 
 function ChangeStateConstat(State,valueState){
 document.getElementById(State).value=valueState;	
-	alert(State+"="+valueState);
 }
 
 
 function EnvoiEmailRapport(){
-	alert(document.getElementById("InputPLV").value);
 require(["dojo/request"], function(request){
 var magasinControle = document.getElementById("magasinControle").value;
+var FacadeVitrine = document.getElementById("InputPropreteFacadeVitrine").value;
+var Surfacevente = document.getElementById("InputPropretesurfacevente").value;
+var Stock = document.getElementById("InputPropreteStock").value;
+var Produits = document.getElementById("InputProduits").value;
+var ModeleExpo = document.getElementById("InputModeleExpo").value;
+var FichesEtPrix = document.getElementById("InputFichesEtPrix").value;
+var PrixCorrectes = document.getElementById("InputPrixCorrectes").value;
+var Visibilite = document.getElementById("InputVisibilite").value;
+var Equipe = document.getElementById("InputEquipe").value;
+var Dynamisme = document.getElementById("InputDynamisme").value;
+var Gilet = document.getElementById("InputGilet").value;
+var Spots = document.getElementById("InputSpots").value;
+var Ecrans = document.getElementById("InputEcrans").value;
+var PLV = document.getElementById("InputPLV").value;
+alert('magasinControle='+magasinControle+'FacadeVitrine='+FacadeVitrine+'&Surfacevente='+Surfacevente+'&Stock='+Stock+'&Produits='+Produits+'&ModeleExpo='+ModeleExpo+'&FichesEtPrix='+FichesEtPrix+'&PrixCorrectes='+PrixCorrectes+'&Visibilite='+Visibilite+'&Equipe='+Equipe+'&Dynamisme='+Dynamisme+'&Gilet='+Gilet+'&Spots='+Spots+'&Ecrans='+Ecrans+'&PLV='+PLV);
 request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle).then(
 function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmationEnvoiRapportBtoB").innerHTML=responseEnvoiEmailRapport;}
 )
