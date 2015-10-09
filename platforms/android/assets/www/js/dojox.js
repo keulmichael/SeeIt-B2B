@@ -432,8 +432,7 @@ var Gilet = document.getElementById("InputGilet").value;
 var Spots = document.getElementById("InputSpots").value;
 var Ecrans = document.getElementById("InputEcrans").value;
 var PLV = document.getElementById("InputPLV").value;
-alert('magasinControle='+magasinControle+'FacadeVitrine='+FacadeVitrine+'&Surfacevente='+Surfacevente+'&Stock='+Stock+'&Produits='+Produits+'&ModeleExpo='+ModeleExpo+'&FichesEtPrix='+FichesEtPrix+'&PrixCorrectes='+PrixCorrectes+'&Visibilite='+Visibilite+'&Equipe='+Equipe+'&Dynamisme='+Dynamisme+'&Gilet='+Gilet+'&Spots='+Spots+'&Ecrans='+Ecrans+'&PLV='+PLV);
-request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle).then(
+request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle+'&FacadeVitrine='+FacadeVitrine+'&Surfacevente='+Surfacevente+'&Stock='+Stock+'&Produits='+Produits+'&ModeleExpo='+ModeleExpo+'&FichesEtPrix='+FichesEtPrix+'&PrixCorrectes='+PrixCorrectes+'&Visibilite='+Visibilite+'&Equipe='+Equipe+'&Dynamisme='+Dynamisme+'&Gilet='+Gilet+'&Spots='+Spots+'&Ecrans='+Ecrans+'&PLV='+PLV).then(
 function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmationEnvoiRapportBtoB").innerHTML=responseEnvoiEmailRapport;}
 )
 })
