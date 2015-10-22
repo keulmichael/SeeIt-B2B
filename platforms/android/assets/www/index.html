@@ -336,6 +336,10 @@ window.onload = function() {initialize();nombrePhotos()};
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePLV){ChangeStateConstat('InputPLV',newStatePLV);}" value="off" id="StatePLV"></div>
 <input type="hidden" id="InputPLV" value="off">
 </li>
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Antivols
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateAntivols){ChangeStateConstat('InputAntivols',newStateAntivols);}" value="off" id="StateAntivols"></div>
+<input type="hidden" id="InputAntivols" value="off">
+</li>
 </div>
 
 <button onclick='EnvoiEmailRapport();'>Envoyer</button><div id='afficherConfirmationEnvoiRapportBtoB'></div>
