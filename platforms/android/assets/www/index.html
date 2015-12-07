@@ -302,18 +302,30 @@ window.onload = function() {initialize();nombrePhotos()};
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePrixCorrectes){ChangeStateConstat('InputPrixCorrectes',newStatePrixCorrectes);}" value="off" id="StatePrixCorrectes"></div>
 <input type="hidden" id="InputPrixCorrectes" value="off">
 </li>
-<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Visibilité
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Visibilité<br>Produits de l’émission du jour<br>Respect des univers
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateVisibilite){ChangeStateConstat('InputVisibilite',newStateVisibilite);}" value="off" id="StateVisibilite"></div>
 <input type="hidden" id="InputVisibilite" value="off">
+</li>
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Mise en scène
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateMiseenscene){ChangeStateConstat('InputMiseenscene',newStateMiseenscene);}" value="off" id="StateMiseenscene"></div>
+<input type="hidden" id="InputMiseenscene" value="off">
 </li>
 </div>
 
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"RH"'>
-<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe en place
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Accueil client
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateAccueilclient){ChangeStateConstat('InputAccueilclient',newStateAccueilclient);}" value="off" id="StateAccueilclient"></div>
+<input type="hidden" id="InputAccueilclient" value="off">
+</li>
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Compréhension du concept<br>Compréhension des offres
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newComprehension){ChangeStateConstat('InputComprehension',newStateComprehension);}" value="off" id="StateComprehension"></div>
+<input type="hidden" id="InputComprehension" value="off">
+</li>
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe en place<br>Organisation des plannings
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateEquipe){ChangeStateConstat('InputEquipe',newStateEquipe);}" value="off" id="StateEquipe"></div>
 <input type="hidden" id="InputEquipe" value="off">
 </li>
-<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe dynamique
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe dynamique<br>Connaissance des produits
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateDynamisme){ChangeStateConstat('InputDynamisme',newStateDynamisme);}" value="off" id="StateDynamisme"></div>
 <input type="hidden" id="InputDynamisme" value="off">
 </li>
@@ -339,6 +351,10 @@ window.onload = function() {initialize();nombrePhotos()};
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Antivols
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateAntivols){ChangeStateConstat('InputAntivols',newStateAntivols);}" value="off" id="StateAntivols"></div>
 <input type="hidden" id="InputAntivols" value="off">
+</li>
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Réfrigérateur
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateFrigo){ChangeStateConstat('InputFrigo',newStateFrigo);}" value="off" id="StateFrigo"></div>
+<input type="hidden" id="InputFrigo" value="off">
 </li>
 </div>
 
