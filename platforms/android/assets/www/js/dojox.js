@@ -426,6 +426,11 @@ var ModeleExpo = document.getElementById("InputModeleExpo").value;
 var FichesEtPrix = document.getElementById("InputFichesEtPrix").value;
 var PrixCorrectes = document.getElementById("InputPrixCorrectes").value;
 var Visibilite = document.getElementById("InputVisibilite").value;
+	
+var MiseenScene = document.getElementById("InputMiseenScene").value;
+var AccueilClient = document.getElementById("InputAccueilClient").value;
+var Comprehension = document.getElementById("InputComprehension").value;
+	
 var Equipe = document.getElementById("InputEquipe").value;
 var Dynamisme = document.getElementById("InputDynamisme").value;
 var Gilet = document.getElementById("InputGilet").value;
@@ -433,6 +438,9 @@ var Spots = document.getElementById("InputSpots").value;
 var Ecrans = document.getElementById("InputEcrans").value;
 var PLVV = document.getElementById("InputPLV").value;
 var Antivols = document.getElementById("InputAntivols").value;
+
+var Frigo = document.getElementById("InputFrigo").value;
+
 request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle+'&FacadeVitrine='+FacadeVitrine+'&Surfacevente='+Surfacevente+'&Stock='+Stock+'&Produits='+Produits+'&ModeleExpo='+ModeleExpo+'&FichesEtPrix='+FichesEtPrix+'&PrixCorrectes='+PrixCorrectes+'&Visibilite='+Visibilite+'&Equipe='+Equipe+'&Dynamisme='+Dynamisme+'&Gilet='+Gilet+'&Spots='+Spots+'&Ecrans='+Ecrans+'&PLV='+PLVV+'&Antivols='+Antivols).then(
 function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmationEnvoiRapportBtoB").innerHTML=responseEnvoiEmailRapport;}
 )
