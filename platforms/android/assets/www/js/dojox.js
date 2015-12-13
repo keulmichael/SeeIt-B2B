@@ -442,7 +442,7 @@ var Antivols = document.getElementById("InputAntivols").value;
 
 var Frigo = document.getElementById("InputFrigo").value;
 
-request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle+'&FacadeVitrine='+FacadeVitrine+'&Surfacevente='+Surfacevente+'&Stock='+Stock+'&Produits='+Produits+'&ModeleExpo='+ModeleExpo+'&FichesEtPrix='+FichesEtPrix+'&PrixCorrectes='+PrixCorrectes+'&Visibilite='+Visibilite+'&MiseenScene='+MiseenScene+'&AccueilClient='+AccueilClient+'&Comprehension='+Comprehension+'&Equipe='+Equipe+'&Dynamisme='+Dynamisme+'&Gilet='+Gilet+'&Spots='+Spots+'&Ecrans='+Ecrans+'&PLV='+PLVV+'&Antivols='+Antivols+'&Frigo'+Frigo).then(
+request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle+'&FacadeVitrine='+FacadeVitrine+'&Surfacevente='+Surfacevente+'&Stock='+Stock+'&Produits='+Produits+'&ModeleExpo='+ModeleExpo+'&FichesEtPrix='+FichesEtPrix+'&PrixCorrectes='+PrixCorrectes+'&Visibilite='+Visibilite+'&MiseenScene='+MiseenScene+'&AccueilClient='+AccueilClient+'&Comprehension='+Comprehension+'&Equipe='+Equipe+'&Dynamisme='+Dynamisme+'&Gilet='+Gilet+'&Spots='+Spots+'&Ecrans='+Ecrans+'&PLV='+PLVV+'&Antivols='+Antivols+'&Frigo='+Frigo).then(
 function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmationEnvoiRapportBtoB").innerHTML=responseEnvoiEmailRapport;}
 )
 })
