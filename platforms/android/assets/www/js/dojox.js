@@ -411,7 +411,7 @@ require([
 
 
 function ChangeStateConstat(State,valueState){
-Alert (State+" - "+valueState);
+alert(State+" - "+valueState);
 document.getElementById(State).value=valueState;	
 }
 
