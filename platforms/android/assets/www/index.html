@@ -250,11 +250,9 @@ window.onload = function() {initialize();nombrePhotos()};
 <!-------------------------------------------------------------CONSTATS--------------------------------------------------------------->
 <div id="tabViewUpdates" data-dojo-type="dojox/mobile/ScrollableView" >
 <h1 data-dojo-type="dojox/mobile/Heading">Constats</h1>
-
 <div id="pull10" style="position: absolute;height: 65px; top: -65px; align="center"">
 <table ><tr><td><img src="http://www.appliseeit.com/mobile/image/pull-to-refresh-arrow.png"></td><td><font color=grey size=2> Chargement en cours...</font></td></tr></table>
 </div>
-
 <font color='grey' size='3'>Sélectionner le magasin</font>
 <select id="magasinControle">
 <option value='' selected disabled>
@@ -267,9 +265,7 @@ window.onload = function() {initialize();nombrePhotos()};
 <option value='Strasbourg'>Strasbourg
 </select>
 <br>
-
 <div data-dojo-type="dojox/mobile/Accordion" >
-
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Propreté"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Facade/Vitrine
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStatePropreteFacadeVitrine){ChangeStateConstat('InputPropreteFacadeVitrine',newStatePropreteFacadeVitrine);}" value="off" id="StatePropreteFacadeVitrine"></div>
@@ -284,7 +280,6 @@ window.onload = function() {initialize();nombrePhotos()};
 <input type="hidden" id="InputPropreteStock" value="off">
 </li>
 </div>
-
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Plan de merchandising"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Produits en place
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateProduits){ChangeStateConstat('InputProduits',newStateProduits);}" value="off" id="StateProduits"></div>
@@ -311,7 +306,6 @@ window.onload = function() {initialize();nombrePhotos()};
 <input type="hidden" id="InputMiseenScene" value="off">
 </li>
 </div>
-
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"RH"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Accueil client
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateAccueilclient){ChangeStateConstat('InputAccueilclient',newStateAccueilclient);}" value="off" id="StateAccueilclient"></div>
@@ -334,7 +328,6 @@ window.onload = function() {initialize();nombrePhotos()};
 </li>
 <input type="hidden" id="InputGilet" value="off">
 </div>
-
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"Matériel"' id='NouscontacterInfos'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Spots
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateSpots){ChangeStateConstat('InputSpots',newStateSpots);}" value="off" id="StateSpots"></div>
@@ -356,13 +349,17 @@ window.onload = function() {initialize();nombrePhotos()};
 <div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateFrigo){ChangeStateConstat('InputFrigo',newStateFrigo);}" value="off" id="StateFrigo"></div>
 <input type="text" id="InputFrigo" value="off">
 </li>
-</div>
 
+<li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Fonds de caisse
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateFrigo){ChangeStateConstat('InputFrigo',newStateFrigo);}" value="off" id="StateFondsdecaisse"></div>
+<input type="text" id="InputFondsdecaisse" value="off">
+</li>
+
+
+</div>
 <button onclick='EnvoiEmailRapport();'>Envoyer</button><div id='afficherConfirmationEnvoiRapportBtoB'></div>
-
 </div>
 </div>
-
 <!--------------------------------------------------------------PIC---------------------------------------------------------------->
 <div id='cadreCamera' style="display:none;position: absolute;height: 65px; top: 65px;" data-dojo-type="dojox/mobile/ScrollableView" >
 <div id='affichLocalisation'></div>
