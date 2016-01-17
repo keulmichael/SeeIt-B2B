@@ -1,5 +1,4 @@
-    
-	require(["dojox/mobile/parser", "dojox/mobile/compat", "dojo/domReady!", "dojox/mobile/View", "dojox/mobile/Heading", "dojox/mobile/RoundRectList", "dojox/mobile/ListItem", "dojox/mobile/Switch", "dojox/mobile/RoundRect", "dojox/mobile/RoundRectCategory", "dojox/mobile/ContentPane", "dojox/mobile/Button", "dojox/mobile/ProgressIndicator", "dojo/_base/xhr", "dojox/mobile/FilteredListMixin", "dojox/mobile/compat", "dojox/form/Uploader", "dojox/mobile/SwapView", "dojox/mobile/PageIndicator", "dojox/mobile/Badge", "dojox/mobile/IconContainer", "dojox/mobile/IconItem", "dojox/mobile", "dojox/mobile/RoundRectDataList", "dojo/data/ItemFileReadStore", "dojox/mobile/TextBox", "dojox/mobile/ToggleButton", "dojox/mobile/TabBar", "dojox/mobile/ScrollableView","dojox/mobile/Accordion","dojo/_base/kernel", "dojo/parser", "dojox/dgauges/components/grey/HorizontalLinearGauge", "dojox/mobile/Tooltip", "dojox/mobile/SimpleDialog" ], function (parser) {
+require(["dojox/mobile/parser", "dojox/mobile/compat", "dojo/domReady!", "dojox/mobile/View", "dojox/mobile/Heading", "dojox/mobile/RoundRectList", "dojox/mobile/ListItem", "dojox/mobile/Switch", "dojox/mobile/RoundRect", "dojox/mobile/RoundRectCategory", "dojox/mobile/ContentPane", "dojox/mobile/Button", "dojox/mobile/ProgressIndicator", "dojo/_base/xhr", "dojox/mobile/FilteredListMixin", "dojox/mobile/compat", "dojox/form/Uploader", "dojox/mobile/SwapView", "dojox/mobile/PageIndicator", "dojox/mobile/Badge", "dojox/mobile/IconContainer", "dojox/mobile/IconItem", "dojox/mobile", "dojox/mobile/RoundRectDataList", "dojo/data/ItemFileReadStore", "dojox/mobile/TextBox", "dojox/mobile/ToggleButton", "dojox/mobile/TabBar", "dojox/mobile/ScrollableView","dojox/mobile/Accordion","dojo/_base/kernel", "dojo/parser", "dojox/dgauges/components/grey/HorizontalLinearGauge", "dojox/mobile/Tooltip", "dojox/mobile/SimpleDialog" ], function (parser) {
 parser.parse();
 });
 dojoConfig = {
@@ -68,7 +67,7 @@ function(responsePseudoNewPhoto){
 var PseudoNewPhotos=responsePseudoNewPhoto.split("_|_");
 if(PseudoNewPhotos[2]!=''){var adresse=PseudoNewPhotos[2];}
 var heure=PseudoNewPhotos[3].split(" ");
-document.getElementById("messageAlerte").innerHTML="<font color=grey size=2>"+PseudoNewPhotos[1] + ' a pris une photo &agrave; ' + adresse + ' &agrave; ' + heure[1]+"<br> Album : "+PseudoNewPhotos[5]+" - Th&ecirc;me : "+PseudoNewPhotos[6]+"</font>";
+document.getElementById("messageAlerte").innerHTML="<font color=grey size=2>"+PseudoNewPhotos[1] + ' a pris une photo &agrave; ' + adresse + ' &agrave; ' + heure[1]+"<br> Album : "+PseudoNewPhotos[5]+" - Th&ecirc;me : "+PseudoNewPhotos[6]+"</font>";
 })
 request.get('http://www.appliseeit.com/mobile/VerifNewAlbum.php').then(
 function(responsePseudoNewAlbum){
@@ -166,7 +165,7 @@ if(elt[i].types[0] == 'point_of_interest'){if (typeof elt[i].long_name != "undef
 if(elt[i].types[0] == 'premise'){if (typeof elt[i].long_name != "undefined"){var prem = elt[i].long_name;}else{var prem='';}}
 if(elt[i].types[0] == 'transit_station'){if (typeof elt[i].long_name != "undefined"){var sta = elt[i].long_name;}else{var sta='';}}
 }
-document.getElementById("affichLocalisation").innerHTML="<font color=black>Votre photo sera localis&eacute;e &agrave;  <br>"+results[1].formatted_address+"<br><br>"+ num +" "+ street +"<br>"+ cp +" "+ city +"<br>"+ dpt +"<br>"+ reg +"<br>"+ pays +"<br><br>"+responseLocalisationAnnonceur+"</font>"; })
+document.getElementById("affichLocalisation").innerHTML="<font color=black>Votre photo sera localis&eacute;e &agrave;  <br>"+results[1].formatted_address+"<br><br>"+ num +" "+ street +"<br>"+ cp +" "+ city +"<br>"+ dpt +"<br>"+ reg +"<br>"+ pays +"<br><br>"+responseLocalisationAnnonceur+"</font>"; })
 })
 }}
 })
@@ -425,12 +424,10 @@ var Produits = document.getElementById("InputProduits").value;
 var ModeleExpo = document.getElementById("InputModeleExpo").value;
 var FichesEtPrix = document.getElementById("InputFichesEtPrix").value;
 var PrixCorrectes = document.getElementById("InputPrixCorrectes").value;
-var Visibilite = document.getElementById("InputVisibilite").value;
-	
+var Visibilite = document.getElementById("InputVisibilite").value;	
 var MiseenScene = document.getElementById("InputMiseenScene").value;
 var AccueilClient = document.getElementById("InputAccueilClient").value;
-var Comprehension = document.getElementById("InputComprehension").value;
-	
+var Comprehension = document.getElementById("InputComprehension").value;	
 var Equipe = document.getElementById("InputEquipe").value;
 var Dynamisme = document.getElementById("InputDynamisme").value;
 var Gilet = document.getElementById("InputGilet").value;
@@ -438,10 +435,10 @@ var Spots = document.getElementById("InputSpots").value;
 var Ecrans = document.getElementById("InputEcrans").value;
 var PLVV = document.getElementById("InputPLV").value;
 var Antivols = document.getElementById("InputAntivols").value;
-
 var Frigo = document.getElementById("InputFrigo").value;
+var Fondsdecaisse = document.getElementById("InputFondsdecaisse").value;
 
-request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle+'&FacadeVitrine='+FacadeVitrine+'&Surfacevente='+Surfacevente+'&Stock='+Stock+'&Produits='+Produits+'&ModeleExpo='+ModeleExpo+'&FichesEtPrix='+FichesEtPrix+'&PrixCorrectes='+PrixCorrectes+'&Visibilite='+Visibilite+'&MiseenScene='+MiseenScene+'&AccueilClient='+AccueilClient+'&Comprehension='+Comprehension+'&Equipe='+Equipe+'&Dynamisme='+Dynamisme+'&Gilet='+Gilet+'&Spots='+Spots+'&Ecrans='+Ecrans+'&PLV='+PLVV+'&Antivols='+Antivols+'&Frigo='+Frigo).then(
+request.get('http://www.appliseeit.com/mobile/envoiEmailRapportBtoB.php?magasinControle='+magasinControle+'&FacadeVitrine='+FacadeVitrine+'&Surfacevente='+Surfacevente+'&Stock='+Stock+'&Produits='+Produits+'&ModeleExpo='+ModeleExpo+'&FichesEtPrix='+FichesEtPrix+'&PrixCorrectes='+PrixCorrectes+'&Visibilite='+Visibilite+'&MiseenScene='+MiseenScene+'&AccueilClient='+AccueilClient+'&Comprehension='+Comprehension+'&Equipe='+Equipe+'&Dynamisme='+Dynamisme+'&Gilet='+Gilet+'&Spots='+Spots+'&Ecrans='+Ecrans+'&PLV='+PLVV+'&Antivols='+Antivols+'&Frigo='+Frigo+'&Fondsdecaisse='+Fondsdecaisse).then(
 function(responseEnvoiEmailRapport){document.getElementById("afficherConfirmationEnvoiRapportBtoB").innerHTML=responseEnvoiEmailRapport;}
 )
 })
