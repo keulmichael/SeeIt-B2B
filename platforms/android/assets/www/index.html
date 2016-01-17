@@ -302,17 +302,17 @@ window.onload = function() {initialize();nombrePhotos()};
 <input type="hidden" id="InputVisibilite" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Mise en scène
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateMiseenscene){ChangeStateConstat('InputMiseenscene',newStateMiseenscene);}" value="off" id="StateMiseenscene"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateMiseenscene){ChangeStateConstat('InputMiseenScene',newStateMiseenscene);}" value="off" id="StateMiseenscene"></div>
 <input type="hidden" id="InputMiseenScene" value="off">
 </li>
 </div>
 <div data-dojo-type="dojox/mobile/ContentPane" data-dojo-props='label:"RH"'>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Accueil client
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateAccueilclient){ChangeStateConstat('InputAccueilclient',newStateAccueilclient);}" value="off" id="StateAccueilclient"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateAccueilclient){ChangeStateConstat('InputAccueilClient',newStateAccueilclient);}" value="off" id="StateAccueilclient"></div>
 <input type="hidden" id="InputAccueilClient" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Compréhension du concept<br>Compréhension des offres
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newComprehension){ChangeStateConstat('InputComprehension',newStateComprehension);}" value="off" id="StateComprehension"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newComprehension){newStateComprehension('InputComprehension',newStateComprehension);}" value="off" id="StateComprehension"></div>
 <input type="hidden" id="InputComprehension" value="off">
 </li>
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Equipe en place<br>Organisation des plannings
@@ -351,7 +351,7 @@ window.onload = function() {initialize();nombrePhotos()};
 </li>
 
 <li data-dojo-type="dojox/mobile/ListItem" data-dojo-props="" style="background-color:white;color:black;font-size:16px">Fonds de caisse
-<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="onStateChanged:function(newStateFrigo){ChangeStateConstat('InputFrigo',newStateFrigo);}" value="off" id="StateFondsdecaisse"></div>
+<div data-dojo-type="dojox/mobile/Switch" data-dojo-props="newStateFondsdecaisse:function(newStateFrigo){ChangeStateConstat('InputFondsdecaisse',newStateFondsdecaisse);}" value="off" id="StateFondsdecaisse"></div>
 <input type="text" id="InputFondsdecaisse" value="off">
 </li>
 
